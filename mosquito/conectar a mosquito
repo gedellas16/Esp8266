@@ -8,8 +8,8 @@ Servo motor;
 
 
 #define MAX_INTENTOS 50
-#define WIFI_SSID "robotica"
-#define WIFI_PASS "pass"
+#define WIFI_SSID "gede"
+#define WIFI_PASS "12345678"
 #define MQTT_HOST IPAddress(52, 13, 116, 147)
 #define MQTT_PORT  1883
 //servo
