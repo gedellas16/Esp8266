@@ -1,0 +1,30 @@
+#include <ESP8266WiFi.h>
+#include "config.h"  // Arquivo local para configuración de rede
+#include "toolsWiFi.hpp" // Biblioteca local para funcións de rede
+
+// Pins datos
+// GPIO14: D5
+#define LED 14
+
+int tempo = 500;
+bool conectado = false;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+  conectarWiFi();
+}
+
+void loop() {
+  if(conectado) escintila(tempo);
+  else escintila(tempo/10);
+}
+
+// Función que encende e apaga o LED cunha
+// frecuencia determianda pola variable 'espera'
+void escintila(int espera) {
+  digitalWrite(LED, HIGH);
+  delay(espera);
+  digitalWrite(LED, LOW);
+  delay(espera);
+}
