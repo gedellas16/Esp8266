@@ -1,4 +1,11 @@
- #include <ESP8266WiFi.h>
+/* Este archivo vamos a utilizarlo para conectar nuestro dispositivo esp8266 a una red wifi propia 
+vamos a usar o pin 14 para controlar un led o cal nos indicará se a conexion se estableceu ou non
+Roberto Sieira González
+1/06/2023*/
+
+
+
+#include <ESP8266WiFi.h>
 
 // WiFi móbil
 #define MAX_INTENTOS 50
